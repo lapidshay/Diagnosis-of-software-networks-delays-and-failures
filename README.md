@@ -99,13 +99,16 @@ c8 has 0.712 ms latency and c5 has 1.056 ms latency. The accumulated latency of 
 
 #### I feed the spectra matrix and the error vectors (each vector at a time) into the BARINEL code, and inspect the results:<br>
 #### The results of Fuzzy Barinel are as following:
+
 	1. Diagnosis (5, 8, 10):      Probability: 0.7989
 	2. Diagnosis (8, 10, 13, 15): Probability: 0.0910
 	3. Diagnosis (5, 10, 20):     Probability: 0.0745
 	4. Diagnosis (8, 10, 15, 16): Probability: 0.0098
 	5. Diagnosis (2, 5):          Probability: 0.0085
+    
 #### The results of Barinel with crisp thresholds:<br>
 Barinel ranked probabilities (threshold – 0.2):
+
 	1. Diagnosis (5, 8, 10):      Probability: 0.4820
 	2. Diagnosis (2, 5):          Probability: 0.1499
 	3. Diagnosis (5, 10, 20):     Probability: 0.1205
@@ -113,6 +116,7 @@ Barinel ranked probabilities (threshold – 0.2):
 	5. Diagnosis (1, 5, 10):      Probability: 0.0395
 
 Barinel ranked probabilities (threshold – 0.4):
+
 	1. Diagnosis (2, 5):           Probability: 0.7996
 	2. Diagnosis (5, 8, 10):       Probability: 0.0889
 	3. Diagnosis (5, 10, 20):      Probability: 0.0889
@@ -120,6 +124,7 @@ Barinel ranked probabilities (threshold – 0.4):
 	5. Diagnosis (10, 13, 15, 20): Probability: 0.0099
 
 Barinel ranked probabilities (threshold – 0.6):
+
 	1. Diagnosis (5, 8, 10):       Probability: 0.9998
 	2. Diagnosis (8, 10, 13, 15):  Probability: 0.0001
 	3. Diagnosis (5, 10, 20):      Probability: 0.0001
@@ -127,6 +132,7 @@ Barinel ranked probabilities (threshold – 0.6):
 	5. Diagnosis (10, 13, 15, 20): Probability: 0.0000
 
 Barinel ranked probabilities (threshold – 0.8):
+
 	1. Diagnosis (5, 8, 10):       Probability: 0.9998
 	2. Diagnosis (8, 10, 13, 15):  Probability: 0.0001
 	3. Diagnosis (5, 10, 20):      Probability: 0.0001
@@ -134,12 +140,12 @@ Barinel ranked probabilities (threshold – 0.8):
 	5. Diagnosis (10, 13, 15, 20): Probability: 0.0000
 
 Barinel ranked probabilities (threshold – 1):
+
 	1. Diagnosis (5, 8, 10):       Probability: 0.9998
 	2. Diagnosis (8, 10, 13, 15):  Probability: 0.0001
 	3. Diagnosis (5, 10, 20):      Probability: 0.0001
 	4. Diagnosis (2, 13):          Probability: 0.0000
 	5. Diagnosis (10, 13, 15, 20): Probability: 0.0000
-
 
 We can observe, that by using Fuzzy BARINEL, we have found the correct diagnosis (5, 8, 10), at 1st rank, and with probability of 0.7989.<br>
 Using crisp BARINEL with threshold 0.2 gave the same result, but with less certainty (probability of 0.482).<br>
@@ -198,8 +204,3 @@ As opposed to the real algorithm described in the paper, STACCATO is outside the
 - Statistics-directed minimal hitting set algorithm (2009, June), Abreu, R. & van Gemund.<br>
 - Spectrum-based multiple fault localization (2009, November), Abreu, R., Zoeteweij, P. & Van Gemund. <br>
 - A framework for automatic debugging of functional and degradation failures (2016, August), Cardoso, N., Abreu, R., Feldman, A., & Kleer.
-
-
-```python
-
-```

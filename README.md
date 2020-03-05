@@ -4,8 +4,7 @@
 ## Introduction:
 
 In this project I address the problem of diagnosing latencies in computer networks.<br>
-I do it by Extending BARINEL algorithm, “Spectrum-Based Multiple Fault Localization” [Abreu et al., 2009]<br>
-with fuzzy logic, according to “A Framework for Automatic Debugging of Functional and Degradation Failures” [Abreu et al., 2019], and adapting it to the computer networks domain.<br>
+I do it by Extending BARINEL algorithm, “Spectrum-Based Multiple Fault Localization” [Abreu et al., 2009] with fuzzy logic, according to “A Framework for Automatic Debugging of Functional and Degradation Failures” [Abreu et al., 2019], and adapting it to the computer networks domain.<br>
 BARINEL is an algorithm which combines SFL (spectrum-based fault localization), and MBD (model-based diagnosis), which aims to rank minimal-hitting-sets, by their probability to explain the observations, i.e to be a correct diagnosis.<br>
 The key difference between BARINEL and the fuzzy logic lies within the following equations:
 
